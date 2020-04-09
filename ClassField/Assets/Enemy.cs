@@ -7,33 +7,33 @@ public class Enemy : MonoBehaviour
     /// </summary>
     [Header("血量"), Tooltip("怪物的血量")]
     [Range(50, 100)]
-    public short 血量;
+    public int 血量; // 想要把這邊全部的int,都用short取代
 
     /// <summary>
     /// 怪物的魔力
     /// </summary>
     [Header("魔力"), Tooltip("怪物的魔力")]
-    [Range(10,100)]
-    public short 魔力 = 100;
+    [Range(10 ,100)]
+    public int 魔力 = 100;
 
     /// <summary>
     /// 怪物的能力值
     /// </summary>
     [Header("能力值")]
-    [Range(1, 50.5f)]
+    [Range(1.0f ,50.5f)]
     public float 移動速度 = 10.5f ;
 
     /// <summary>
     /// 怪物的攻擊力
     /// </summary>
-    [Range(20,200)]
-    public short 攻擊力 = 50 ;
+    [Range(20 ,200)]
+    public int 攻擊力 = 50 ;
 
     /// <summary>
     /// 怪物的防禦力
     /// </summary>
-    [Range(0, 100)]
-    public short 防禦力 ;
+    [Range(0 ,100)]
+    public int 防禦力 ;
 
     /// <summary>
     /// 怪物的武器
